@@ -72,15 +72,22 @@ h2, .number {
 .main-img {
     width: 370px;
     position: relative;
+    margin-bottom: -4px;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
-.main-img::after {
-    content: '';
+.picture {
     width: 100%;
-    height: 100%;
     background-color: hsl(277, 64%, 61%);
-    position: absolute;
-    inset: 0;
+    opacity: 1;
 }
 
+@media (max-width: 700px) {
+    .container2 {
+        flex-direction: column-reverse;
+    }
+
+    
+}
 
